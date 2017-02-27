@@ -1,0 +1,196 @@
+@charset"utf-8";
+body{
+	padding:0;
+	margin:0;
+	background: #dedede;
+	width: 100%;
+}
+h1,h2,h4,h5{
+	padding:0;
+	margin:0;
+}
+/*拉轰的清除浮动*/
+.clearfix{
+	overflow: auto;
+	_zoom:1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;	
+}
+/*拉轰的清除浮动 end*/
+
+/*头部*/
+header{
+	width: 100%;
+	height: 60px;
+	background: #333333;
+	margin-bottom: 20px;
+	clear: both;
+}
+header h1{
+	width: 224px;
+	height: 60px;
+	background: url(images/logo.jpg) no-repeat 50% 46%;
+	text-indent: -9999px;
+	float: left;
+}
+header ul{
+	float: right;
+	margin-top: 20px;
+	padding-right: 20px;
+}
+header ul li{
+	float: left;
+	font-size: 12px;
+	
+}
+header ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 80px;
+}
+header ul li a:hover{
+	color:#ACACAC;
+}
+/*左 右 公共部分 */
+article.main_left section,article.main_right{
+	background: #fff;
+	padding: 22px;
+	border:1px solid #cbcbcb;
+	box-shadow: 2px 2px 0px #848484;
+	-webkit-box-shadow: 2px 2px 0px #848484;
+	-moz-box-shadow: 2px 2px 0px #848484;	
+}
+
+article.main_left section h4,h5{
+	color:#676B6E;
+}
+article.main_left section h5{
+	margin-top: 6px;
+	font-weight: normal;
+}
+article.main_left section p{
+	font-size: 14px;
+	text-indent: 2em;
+}
+/*左 右 公共部分 end*/
+
+/*文章块 左侧区*/
+article.main_left{
+	float: left;
+	margin-right: 400px;
+}
+article.main_left section{
+	margin:0px 0px 40px 20px;
+}
+/*图片*/
+section figure{
+	width: 120px;
+	height: 126px;
+	border: 1px solid #CDCDCD;
+	float: left;
+}
+section figure img{
+	border:0;
+	display: block;
+	width: 100px;
+	height: 80px;
+	margin:0px auto;
+}
+section figcaption{
+	text-align: center;
+	line-height: 30px;
+}
+/*表格*/
+section table{
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: left;
+}
+section table,table th,table td{
+	border:1px solid #ccc;
+	line-height: 26px;
+	padding-left: 4px;
+}
+section table th{
+	background: #333;
+	color: #fff;
+}
+section table tfoot{
+	background: #ccc;
+	font-weight: bold;
+}
+/*表单 右侧栏*/
+article.main_right{
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	width: 322px;
+	height: 500px;
+
+}
+article.main_right aside  h4{
+	color:#000;
+	border-left:3px solid #ccc;
+	padding-left: 10px;
+	line-height: 33px;
+	height: 33px;
+}
+article.main_right aside form{
+	width: 100%;
+	font-size: 12px;
+}
+article.main_right aside form fieldset{
+	width: 326px;
+	height: 400px;
+	margin-left: -10px;
+	border: 0;
+}
+article.main_right aside form p span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;	
+	margin-right: 8px;
+	vertical-align: top;
+}
+article.main_right aside form p small{
+	color: #666;
+	display: block;
+	font-size: 12px;
+	line-height: 34px;
+	margin-left: 120px;
+}
+article.main_right aside form textarea{
+	width: 208px;
+	height: 100px;
+}
+article.main_right aside form button{
+	display: block;
+	background: #3355D0;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+
+	border: 0;
+	height: 38px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+/*页面底部版权*/
+footer{
+	background: #000;
+	width: 100%;
+	height: 44px;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 16px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
